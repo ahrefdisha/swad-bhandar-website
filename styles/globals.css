@@ -2040,3 +2040,66 @@ body {
     transform: translateY(-10px);
   }
 }
+
+/* Compact mobile hero composition */
+@media (max-width: 640px) {
+  .hero-floating {
+    position: relative !important;
+    display: block !important;
+    width: 310px !important;
+    max-width: 92vw !important;
+    height: 235px !important;
+    margin: 12px auto 4px !important;
+  }
+
+  .hero-floating::before {
+    display: none !important;
+  }
+
+  .hero-floating .floating-pouch {
+    position: absolute !important;
+    margin: 0 !important;
+    inset: auto !important;
+    animation: none !important;
+  }
+
+  .hero-floating .p1 {
+    width: 88px !important;
+    height: 116px !important;
+    left: 4px !important;
+    top: 103px !important;
+  }
+
+  .hero-floating .p2 {
+    width: 125px !important;
+    height: 164px !important;
+    left: 50% !important;
+    top: 0 !important;
+    transform: translateX(-50%) !important;
+  }
+
+  .hero-floating .p3 {
+    width: 92px !important;
+    height: 120px !important;
+    right: 4px !important;
+    top: 105px !important;
+  }
+
+  /* Float only the image, not its position wrapper */
+  .hero-floating .floating-pouch img {
+    animation: mobilePouchFloat 3.8s ease-in-out infinite !important;
+  }
+
+  .hero-floating .p2 img {
+    animation-delay: .5s !important;
+  }
+
+  .hero-floating .p3 img {
+    animation-delay: 1s !important;
+  }
+}
+
+@keyframes mobilePouchFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
