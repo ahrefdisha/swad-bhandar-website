@@ -1887,3 +1887,72 @@ body {
     top: 120px;
   }
 }
+
+/* Final mobile hero image alignment */
+@media (max-width: 640px) {
+  .hero-floating {
+    position: relative !important;
+    width: 320px !important;
+    max-width: 100% !important;
+    height: 285px !important;
+    margin: 15px auto 0 !important;
+  }
+
+  /* animation mobile par positioning disturb na kare */
+  .hero-floating .floating-pouch {
+    animation: none !important;
+    transform: none !important;
+  }
+
+  .hero-floating .floating-pouch.p1 {
+    width: 95px !important;
+    height: 125px !important;
+    left: 10px !important;
+    right: auto !important;
+    top: 125px !important;
+  }
+
+  .hero-floating .floating-pouch.p2 {
+    width: 135px !important;
+    height: 176px !important;
+    left: 50% !important;
+    right: auto !important;
+    top: 5px !important;
+    margin-left: -67.5px !important;
+  }
+
+  .hero-floating .floating-pouch.p3 {
+    width: 100px !important;
+    height: 131px !important;
+    right: 10px !important;
+    left: auto !important;
+    top: 125px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-floating {
+    width: 285px !important;
+    height: 265px !important;
+  }
+
+  .hero-floating .floating-pouch.p1 {
+    width: 82px !important;
+    height: 108px !important;
+    left: 5px !important;
+    top: 120px !important;
+  }
+
+  .hero-floating .floating-pouch.p2 {
+    width: 118px !important;
+    height: 154px !important;
+    margin-left: -59px !important;
+  }
+
+  .hero-floating .floating-pouch.p3 {
+    width: 86px !important;
+    height: 113px !important;
+    right: 5px !important;
+    top: 122px !important;
+  }
+}
