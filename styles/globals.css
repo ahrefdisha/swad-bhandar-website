@@ -1650,7 +1650,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Tablet: keep navigation visible in a second row */
+/* Tablet */
 @media (max-width: 900px) {
   .nav {
     flex-wrap: wrap;
@@ -1662,24 +1662,40 @@ body {
     order: 3;
     width: 100%;
     justify-content: center;
-    align-items: center;
     gap: 28px;
-    padding-top: 8px;
   }
 
   .hero {
     grid-template-columns: 1fr;
-    gap: 35px;
-  }
-
-  .hero-content {
-    max-width: 650px;
+    gap: 28px;
   }
 
   .hero-floating {
     width: 420px;
-    height: 420px;
+    height: 380px;
     max-width: 100%;
+  }
+
+  .floating-pouch.p1 {
+    width: 125px;
+    height: 164px;
+    left: 20px;
+    top: 130px;
+  }
+
+  .floating-pouch.p2 {
+    width: 165px;
+    height: 215px;
+    left: 50%;
+    margin-left: -82.5px;
+    top: 10px;
+  }
+
+  .floating-pouch.p3 {
+    width: 118px;
+    height: 154px;
+    right: 20px;
+    top: 145px;
   }
 }
 
@@ -1691,7 +1707,6 @@ body {
 
   .logo {
     font-size: 1rem;
-    white-space: nowrap;
   }
 
   .logo .logo-img {
@@ -1704,33 +1719,23 @@ body {
     order: 3;
     width: 100%;
     justify-content: center;
-    gap: 32px;
-    padding: 7px 0 2px;
+    gap: 30px;
+    padding-top: 6px;
     font-size: 0.85rem;
   }
 
   .cart-btn {
-    white-space: nowrap;
     padding: 7px 10px;
     font-size: 0.78rem;
   }
 
   .hero {
-    padding: 42px 18px 35px;
-    gap: 20px;
-  }
-
-  .hero-content {
-    width: 100%;
+    padding: 38px 16px 14px;
+    gap: 16px;
   }
 
   .hero h1 {
     font-size: clamp(2rem, 10vw, 2.6rem);
-  }
-
-  .hero p,
-  .hero-subtitle {
-    max-width: 100%;
   }
 
   .hero-cta-group {
@@ -1740,316 +1745,18 @@ body {
 
   .hero-cta-group > a {
     width: 100%;
-    justify-content: center;
     text-align: center;
+    justify-content: center;
   }
 
-  .hero-floating {
-    width: 340px;
-    height: 310px;
-    max-width: 100%;
-  }
-
-  .floating-pouch.p1 {
-    width: 105px;
-    height: 138px;
-    left: 0;
-    top: 115px;
-  }
-
-  .floating-pouch.p2 {
-    width: 140px;
-    height: 183px;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%);
-  }
-
-  .floating-pouch.p3 {
-    width: 95px;
-    height: 125px;
-    right: 0;
-    top: 140px;
-  }
-
-  .section {
-    width: 100%;
-    overflow: hidden;
-  }
-
-  .cta-band {
-    padding: 55px 18px !important;
-  }
-
-  .cta-band h2 {
-    font-size: 1.7rem;
-  }
-
-  .footer-grid a {
-    overflow-wrap: anywhere;
-  }
-}
-
-/* Small phones */
-@media (max-width: 480px) {
-  .category-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-floating {
-    width: 290px;
-    height: 275px;
-  }
-
-  .floating-pouch.p1 {
-    width: 90px;
-    height: 118px;
-    top: 105px;
-  }
-
-  .floating-pouch.p2 {
-    width: 120px;
-    height: 157px;
-  }
-
-  .floating-pouch.p3 {
-    width: 82px;
-    height: 108px;
-    top: 125px;
-  }
-}
-
-@media (max-width: 400px) {
-  .product-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .nav-links {
-    gap: 24px;
-  }
-}
-
-
-/* Better mobile hero product arrangement */
-@media (max-width: 640px) {
-  .hero-floating {
-    position: relative;
-    width: min(100%, 330px);
-    height: 300px;
-    margin: 10px auto 0;
-  }
-
-  .floating-pouch.p1 {
-    width: 95px;
-    height: auto;
-    left: 7%;
-    top: 125px;
-  }
-
-  .floating-pouch.p2 {
-    width: 135px;
-    height: auto;
-    left: 50%;
-    top: 0;
-    right: auto;
-    transform: translateX(-50%);
-    z-index: 3;
-  }
-
-  .floating-pouch.p3 {
-    width: 105px;
-    height: auto;
-    right: 7%;
-    left: auto;
-    top: 130px;
-  }
-}
-
-@media (max-width: 400px) {
-  .hero-floating {
-    width: 290px;
-    height: 270px;
-  }
-
-  .floating-pouch.p1 {
-    width: 82px;
-    left: 5%;
-    top: 115px;
-  }
-
-  .floating-pouch.p2 {
-    width: 120px;
-  }
-
-  .floating-pouch.p3 {
-    width: 90px;
-    right: 5%;
-    top: 120px;
-  }
-}
-
-/* Final mobile hero image alignment */
-@media (max-width: 640px) {
-  .hero-floating {
-    position: relative !important;
-    width: 320px !important;
-    max-width: 100% !important;
-    height: 285px !important;
-    margin: 15px auto 0 !important;
-  }
-
-  /* animation mobile par positioning disturb na kare */
-  .hero-floating .floating-pouch {
-    animation: none !important;
-    transform: none !important;
-  }
-
-  .hero-floating .floating-pouch.p1 {
-    width: 95px !important;
-    height: 125px !important;
-    left: 10px !important;
-    right: auto !important;
-    top: 125px !important;
-  }
-
-  .hero-floating .floating-pouch.p2 {
-    width: 135px !important;
-    height: 176px !important;
-    left: 50% !important;
-    right: auto !important;
-    top: 5px !important;
-    margin-left: -67.5px !important;
-  }
-
-  .hero-floating .floating-pouch.p3 {
-    width: 100px !important;
-    height: 131px !important;
-    right: 10px !important;
-    left: auto !important;
-    top: 125px !important;
-  }
-}
-
-@media (max-width: 400px) {
-  .hero-floating {
-    width: 285px !important;
-    height: 265px !important;
-  }
-
-  .hero-floating .floating-pouch.p1 {
-    width: 82px !important;
-    height: 108px !important;
-    left: 5px !important;
-    top: 120px !important;
-  }
-
-  .hero-floating .floating-pouch.p2 {
-    width: 118px !important;
-    height: 154px !important;
-    margin-left: -59px !important;
-  }
-
-  .hero-floating .floating-pouch.p3 {
-    width: 86px !important;
-    height: 113px !important;
-    right: 5px !important;
-    top: 122px !important;
-  }
-}
-
-/* Mobile hero product layout fix */
-@media (max-width: 640px) {
-  .hero-floating {
-    width: 100% !important;
-    max-width: 340px !important;
-    height: 270px !important;
-    margin: 10px auto 0 !important;
-    display: grid !important;
-    grid-template-columns: 1fr 1.25fr 1fr !important;
-    align-items: end !important;
-    gap: 8px !important;
-  }
-
-  .hero-floating::before {
-    display: none !important;
-  }
-
-  .hero-floating .floating-pouch {
-    position: relative !important;
-    inset: auto !important;
-    width: 100% !important;
-    height: auto !important;
-    animation: none !important;
-    transform: none !important;
-    border-radius: 14px !important;
-  }
-
-  .hero-floating .p1 {
-    align-self: end !important;
-    margin-bottom: 10px !important;
-  }
-
-  .hero-floating .p2 {
-    align-self: start !important;
-    margin-top: 0 !important;
-  }
-
-  .hero-floating .p3 {
-    align-self: end !important;
-    margin-bottom: 10px !important;
-  }
-
-  .hero-floating .floating-pouch img {
-    width: 100% !important;
-    height: auto !important;
-    display: block !important;
-    object-fit: contain !important;
-  }
-}
-
-/* Restore gentle floating on mobile without breaking alignment */
-@media (max-width: 640px) {
-  .hero-floating .floating-pouch {
-    animation: none !important;
-  }
-
-  .hero-floating .floating-pouch img {
-    animation: mobileFloat 3.5s ease-in-out infinite !important;
-    will-change: transform;
-  }
-
-  .hero-floating .p1 img {
-    animation-delay: 0s !important;
-  }
-
-  .hero-floating .p2 img {
-    animation-delay: 0.6s !important;
-  }
-
-  .hero-floating .p3 img {
-    animation-delay: 1.2s !important;
-  }
-}
-
-@keyframes mobileFloat {
-  0%, 100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
-/* Compact mobile hero composition */
-@media (max-width: 640px) {
+  /* Compact triangle */
   .hero-floating {
     position: relative !important;
     display: block !important;
-    width: 310px !important;
-    max-width: 92vw !important;
-    height: 235px !important;
-    margin: 12px auto 4px !important;
+    width: 300px !important;
+    max-width: 90vw !important;
+    height: 205px !important;
+    margin: 6px auto 0 !important;
   }
 
   .hero-floating::before {
@@ -2058,36 +1765,37 @@ body {
 
   .hero-floating .floating-pouch {
     position: absolute !important;
-    margin: 0 !important;
-    inset: auto !important;
     animation: none !important;
+    margin: 0 !important;
+    transform: none !important;
   }
 
   .hero-floating .p1 {
-    width: 88px !important;
-    height: 116px !important;
-    left: 4px !important;
-    top: 103px !important;
+    width: 86px !important;
+    height: 113px !important;
+    left: 22px !important;
+    top: 80px !important;
   }
 
   .hero-floating .p2 {
-    width: 125px !important;
-    height: 164px !important;
+    width: 118px !important;
+    height: 154px !important;
     left: 50% !important;
-    top: 0 !important;
-    transform: translateX(-50%) !important;
+    margin-left: -59px !important;
+    top: 8px !important;
   }
 
   .hero-floating .p3 {
-    width: 92px !important;
-    height: 120px !important;
-    right: 4px !important;
-    top: 105px !important;
+    width: 88px !important;
+    height: 115px !important;
+    right: 22px !important;
+    top: 82px !important;
   }
 
-  /* Float only the image, not its position wrapper */
+  /* Floating animation image par rahegi */
   .hero-floating .floating-pouch img {
     animation: mobilePouchFloat 3.8s ease-in-out infinite !important;
+    will-change: transform;
   }
 
   .hero-floating .p2 img {
@@ -2097,9 +1805,49 @@ body {
   .hero-floating .p3 img {
     animation-delay: 1s !important;
   }
+
+  .trust-strip {
+    padding-top: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-floating {
+    width: 275px !important;
+    height: 195px !important;
+  }
+
+  .hero-floating .p1 {
+    width: 78px !important;
+    height: 102px !important;
+    left: 18px !important;
+    top: 78px !important;
+  }
+
+  .hero-floating .p2 {
+    width: 108px !important;
+    height: 141px !important;
+    margin-left: -54px !important;
+  }
+
+  .hero-floating .p3 {
+    width: 80px !important;
+    height: 105px !important;
+    right: 18px !important;
+    top: 80px !important;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @keyframes mobilePouchFloat {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-7px);
+  }
 }
