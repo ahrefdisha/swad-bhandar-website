@@ -2006,3 +2006,37 @@ body {
     object-fit: contain !important;
   }
 }
+
+/* Restore gentle floating on mobile without breaking alignment */
+@media (max-width: 640px) {
+  .hero-floating .floating-pouch {
+    animation: none !important;
+  }
+
+  .hero-floating .floating-pouch img {
+    animation: mobileFloat 3.5s ease-in-out infinite !important;
+    will-change: transform;
+  }
+
+  .hero-floating .p1 img {
+    animation-delay: 0s !important;
+  }
+
+  .hero-floating .p2 img {
+    animation-delay: 0.6s !important;
+  }
+
+  .hero-floating .p3 img {
+    animation-delay: 1.2s !important;
+  }
+}
+
+@keyframes mobileFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
