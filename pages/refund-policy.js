@@ -6,12 +6,12 @@ export default function RefundPolicy() {
   return (
     <>
       <Head>
-        <title>Refund &amp; Return Policy — Swaad Bhandar</title>
+        <title>Refund &amp; Return Policy — Swad Bhandar</title>
       </Head>
       <header>
         <nav className="nav">
           <Link href="/" className="logo">
-            <Image src="/images/logo.png" alt="Swaad Bhandar" width={48} height={48} className="logo-img" />
+            <Image src="/images/logo.png" alt="Swad Bhandar" width={48} height={48} className="logo-img" />
             Swad Bhandar
           </Link>
         </nav>

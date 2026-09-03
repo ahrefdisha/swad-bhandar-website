@@ -6,12 +6,12 @@ export default function PrivacyPolicy() {
   return (
     <>
       <Head>
-        <title>Privacy Policy — Swaad Bhandar</title>
+        <title>Privacy Policy — Swad Bhandar</title>
       </Head>
       <header>
         <nav className="nav">
           <Link href="/" className="logo">
-            <Image src="/images/logo.png" alt="Swaad Bhandar" width={48} height={48} className="logo-img" />
+            <Image src="/images/logo.png" alt="Swad Bhandar" width={48} height={48} className="logo-img" />
             Swad Bhandar
           </Link>
         </nav>
@@ -21,7 +21,7 @@ export default function PrivacyPolicy() {
         <p className="legal-updated">Last updated: July 2026</p>
 
         <h2>1. Information We Collect</h2>
-        <p>When you place an order or write a review on Swaad Bhandar, we collect the following information: your name, phone number, delivery address, and the products you order. If you write a review, we store your name and the review text.</p>
+        <p>When you place an order or write a review on Swad Bhandar, we collect the following information: your name, phone number, delivery address, and the products you order. If you write a review, we store your name and the review text.</p>
 
         <h2>2. How We Use Your Information</h2>
         <p>We use your information only to process and deliver your order, communicate with you about your order via WhatsApp, and display reviews on our website. We do not sell, rent, or share your personal information with third parties for marketing purposes.</p>

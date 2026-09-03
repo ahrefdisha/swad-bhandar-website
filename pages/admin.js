@@ -38,7 +38,7 @@ export default function Admin() {
     return (
       <>
         <Head>
-          <title>Admin Login — Swaad Bhandar</title>
+          <title>Admin Login — Swad Bhandar</title>
         </Head>
         <div style={{ maxWidth: 400, margin: "100px auto", padding: 24 }}>
           <h2 style={{ marginBottom: 16 }}>Admin Login</h2>
@@ -77,7 +77,7 @@ export default function Admin() {
   return (
     <>
       <Head>
-        <title>Orders — Swaad Bhandar Admin</title>
+        <title>Orders — Swad Bhandar Admin</title>
       </Head>
       <div style={{ maxWidth: 900, margin: "0 auto", padding: "40px 20px" }}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 24 }}>

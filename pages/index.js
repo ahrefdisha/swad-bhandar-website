@@ -127,7 +127,7 @@ export default function Home() {
 
       <div className="ribbon">
         <div className="ribbon-track">
-          <span>Ek Bhandar, Har Ghar Ka Swaad</span>
+          <span>Ek Bhandar, Har Ghar Ka Swad</span>
           <span>🏠 A Taste of Home, For Every Home</span>
           <span>😊 Happy Customers</span>
           <span>🌿 No Palm Oil</span>
@@ -144,7 +144,7 @@ export default function Home() {
           <div className="hero-ornament"></div>
           <h1>
             Ek <em>Bhandar</em>,<br />
-            Har Ghar Ka Swaad
+            Har Ghar Ka Swad
           </h1>
           <p className="hero-subtitle">The taste of yesteryears, made for today.</p>
           <p>
