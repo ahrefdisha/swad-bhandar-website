@@ -1829,3 +1829,61 @@ body {
   }
 }
 
+
+/* Better mobile hero product arrangement */
+@media (max-width: 640px) {
+  .hero-floating {
+    position: relative;
+    width: min(100%, 330px);
+    height: 300px;
+    margin: 10px auto 0;
+  }
+
+  .floating-pouch.p1 {
+    width: 95px;
+    height: auto;
+    left: 7%;
+    top: 125px;
+  }
+
+  .floating-pouch.p2 {
+    width: 135px;
+    height: auto;
+    left: 50%;
+    top: 0;
+    right: auto;
+    transform: translateX(-50%);
+    z-index: 3;
+  }
+
+  .floating-pouch.p3 {
+    width: 105px;
+    height: auto;
+    right: 7%;
+    left: auto;
+    top: 130px;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-floating {
+    width: 290px;
+    height: 270px;
+  }
+
+  .floating-pouch.p1 {
+    width: 82px;
+    left: 5%;
+    top: 115px;
+  }
+
+  .floating-pouch.p2 {
+    width: 120px;
+  }
+
+  .floating-pouch.p3 {
+    width: 90px;
+    right: 5%;
+    top: 120px;
+  }
+}
