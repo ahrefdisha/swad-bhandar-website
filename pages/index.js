@@ -99,9 +99,9 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Swad Bhandar — Authentic Homemade Bihari Snacks Online</title>
+        <title>Swad Bhandar — Authentic Homemade Snacks Online</title>
         <meta name="description" content="Swad Bhandar brings traditional, handmade snacks like Thekua, Khakra and Makhana — no preservatives, no palm oil, made fresh and delivered to your door." />
-        <meta property="og:title" content="Swad Bhandar — Authentic Homemade Bihari Snacks" />
+        <meta property="og:title" content="Swad Bhandar — Authentic Homemade Snacks" />
         <meta property="og:description" content="Traditional recipes, homemade with love. Order Thekua, Khakra and Makhana online." />
         <meta property="og:image" content="/images/logo.png" />
         <meta property="og:type" content="website" />
@@ -191,7 +191,7 @@ export default function Home() {
           <span className="icon"><HomeIcon size={26} /></span>
           <div>
             <strong>100% Homemade</strong>
-            <span>Traditional Bihari recipes</span>
+            <span>Traditional recipes</span>
           </div>
         </div>
         <div className="trust-item">
