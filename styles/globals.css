@@ -1956,3 +1956,53 @@ body {
     top: 122px !important;
   }
 }
+
+/* Mobile hero product layout fix */
+@media (max-width: 640px) {
+  .hero-floating {
+    width: 100% !important;
+    max-width: 340px !important;
+    height: 270px !important;
+    margin: 10px auto 0 !important;
+    display: grid !important;
+    grid-template-columns: 1fr 1.25fr 1fr !important;
+    align-items: end !important;
+    gap: 8px !important;
+  }
+
+  .hero-floating::before {
+    display: none !important;
+  }
+
+  .hero-floating .floating-pouch {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    animation: none !important;
+    transform: none !important;
+    border-radius: 14px !important;
+  }
+
+  .hero-floating .p1 {
+    align-self: end !important;
+    margin-bottom: 10px !important;
+  }
+
+  .hero-floating .p2 {
+    align-self: start !important;
+    margin-top: 0 !important;
+  }
+
+  .hero-floating .p3 {
+    align-self: end !important;
+    margin-bottom: 10px !important;
+  }
+
+  .hero-floating .floating-pouch img {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    object-fit: contain !important;
+  }
+}
